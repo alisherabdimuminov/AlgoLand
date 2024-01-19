@@ -1,0 +1,40 @@
+@font-face {
+  font-family: roboto;
+  src: url("../assets//fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: digital;
+  src: url(../assets/fonts/DigitalNumbers-Regular.ttf);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+a {
+  color: #4d4d4d;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  padding: 25px 25px;
+}
