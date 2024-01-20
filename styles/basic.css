@@ -2,10 +2,6 @@
   font-family: roboto;
   src: url("../assets//fonts/Roboto-Regular.ttf");
 }
-@font-face {
-  font-family: digital;
-  src: url(../assets/fonts/DigitalNumbers-Regular.ttf);
-}
 *,
 *::after,
 *::before {
@@ -13,12 +9,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0.5em;
 }
 ::-webkit-scrollbar-thumb {
   display: none;
-}
+} */
 
 a {
   color: #4d4d4d;
