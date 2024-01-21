@@ -88,10 +88,9 @@ aside {
   gap: 40px;
   padding: 20px;
 }
-.section_title {
-  font-size: 14px;
+.menu_title {
+  font-size: 13px;
   font-family: roboto;
-  font-weight: bold;
   color: var(--section-color);
   display: flex;
   align-items: center;
@@ -101,27 +100,48 @@ aside {
   height: 20px;
   overflow: hidden;
 }
+
 .wide {
   height: auto;
 }
+.menu_section,
 ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   justify-content: start;
 }
 div > li,
 ul > li {
-  margin-left: 25px;
+  padding: 15px;
+  padding-left: 55px;
+}
+ul > li:hover {
+  background-color: var(--hover-color);
+  transition: all 0.3s linear;
+  border-radius: 15px;
+}
+
+.section_title {
+  color: var(--li-color);
+  font-family: roboto;
+}
+
+.menu_section > li,
+ul > li {
+  margin-left: -15px;
   font-family: roboto;
   text-align: start;
   display: flex;
   align-items: center;
-  gap: 10px;
   color: var(--li-color);
+  position: relative;
+  cursor: pointer;
 }
 ul > li > img {
   width: 24px;
+  position: absolute;
+  left: 5%;
+  top: 12px;
 }
 .collapse-box {
   left: 0;
