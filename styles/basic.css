@@ -8,18 +8,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --a-color: #4d4d4d;
+  --background-color: #141824;
+  --hover-color: #31374a;
+  --main-white: #eff2f6;
+  --borders-color: #31374a;
+  --li-color: #9fa6bc;
+  --section-color: #6e7891;
 }
-/* ::-webkit-scrollbar {
-  width: 0.5em;
-}
-::-webkit-scrollbar-thumb {
-  display: none;
-} */
-
 a {
-  color: #4d4d4d;
+  color: var(--a-color);
 }
-
+body {
+  background-color: var(--background-color);
+}
 .hidden {
   display: none;
 }
