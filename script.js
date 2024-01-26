@@ -7,20 +7,16 @@ function collapse() {
     ? (collapseBtn.innerHTML = ">")
     : (collapseBtn.innerHTML = "<");
 }
-function coll() {
-  const menuSection = document.querySelector(".menu_section");
-  menuSection.classList.toggle("coll");
-  const coll = document.querySelector(".coll");
-  console.log(menuSection.classList);
-  menuSection.classList.contains("coll")
-    ? (coll.innerHTML = ">")
-    : (coll.innerHTML = "<");
-}
 function wide() {
   const section = document.querySelectorAll(".menu_section");
   section.forEach((e) => {
+    const arrow = document.querySelectorAll("li>li");
+    arrow.forEach((l) => {
+      console.log(l);
+    });
     e.addEventListener("click", () => {
       e.classList.toggle("wide");
+      arrow.style.transform = "rotate(90deg)";
     });
   });
 }

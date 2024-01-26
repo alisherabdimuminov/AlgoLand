@@ -95,6 +95,7 @@ aside {
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 .menu_section {
   height: 20px;
@@ -158,8 +159,14 @@ ul > li > img {
   gap: 15px;
   border-radius: 15%;
   color: var(--main-white);
+  cursor: pointer;
 }
 .collapse {
   margin-left: -50%;
   transition: all 2s linear;
+}
+.arrow {
+  position: absolute;
+  left: 0;
+  top: 10px;
 }
